@@ -9,19 +9,19 @@
 import SwiftUI
 
 /// A SwiftUI convenience wrapper to allow you to set both a foreground color and stroke for a shape.
-struct StrokedShape<ShapeContent>: View where ShapeContent: Shape {
+public struct StrokedShape<ShapeContent>: View where ShapeContent: Shape {
     
     /// Foreground or fill color for the shape
-    var foreground: Color?
+    public var foreground: Color?
     
     /// Outline/stroke color
-    var outlineColor: Color?
+    public var outlineColor: Color?
     
     /// Width/thickness of the outline/stroke
-    var outlineWidth: CGFloat = 1
+    public var outlineWidth: CGFloat = 1
     
     /// View builder that produces a shape
-    var shape: () -> ShapeContent
+    public var shape: () -> ShapeContent
     
     // Initializer ---------------------------- /
     
@@ -32,7 +32,7 @@ struct StrokedShape<ShapeContent>: View where ShapeContent: Shape {
      - Parameter outlineWidth: Width/thickness of the outline/stroke
      - Parameter shape: View builder that produces a shape
      */
-    @inlinable init(
+    public @inlinable init(
         foreground: Color? = nil,
         outlineColor: Color? = nil,
         outlineWidth: CGFloat = 1,
