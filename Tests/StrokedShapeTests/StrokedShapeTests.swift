@@ -8,8 +8,4 @@ final class StrokedShapeTests: XCTestCase {
         // results.
         XCTAssertEqual("Hello, World!", "Hello, World!")
     }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
 }

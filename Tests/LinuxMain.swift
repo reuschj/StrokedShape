@@ -1,7 +1,2 @@
-import XCTest
-
-import StrokedShapeTests
-
-var tests = [XCTestCaseEntry]()
-tests += StrokedShapeTests.allTests()
-XCTMain(tests)
+// LinuxMain.swift
+fatalError("Run the tests with `swift test --enable-test-discovery`.")
